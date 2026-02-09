@@ -38,14 +38,22 @@ pip install -r requirements.txt
 ```
 
 ## 2) Hugging Face Login (IMPORTANT)
+
 **Do NOT hardcode your token in code.**
+
 Use an environment variable instead:
+
+```
 export HF_TOKEN="YOUR_TOKEN"
+```
 
 Then in Python:
+
+```
 from huggingface_hub import login
 import os
 login(token=os.getenv("HF_TOKEN"))
+```
 
 ## 3) Train :
 Run the notebook/script to:
